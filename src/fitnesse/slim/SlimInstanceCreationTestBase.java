@@ -70,8 +70,8 @@ public abstract class SlimInstanceCreationTestBase {
 
   @Test
   public void cantCreateInstanceIfConstructorArgumentCountIncorrect() throws Exception {
-    String result = (String) caller.create("x", getTestClassName(), new Object[]{"3", "4"});
-    assertException("message:<<COULD_NOT_INVOKE_CONSTRUCTOR " + getTestClassName() + "[2]>>", result);
+    String result = (String) caller.create("x", getTestClassName(), new Object[]{"1", "2", "3"});
+    assertException("message:<<COULD_NOT_INVOKE_CONSTRUCTOR " + getTestClassName() + "[3]>>", result);
   }
 
 

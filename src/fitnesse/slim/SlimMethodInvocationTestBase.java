@@ -159,20 +159,20 @@ abstract public class SlimMethodInvocationTestBase {
   @Test
   public void handleReturnNull() throws Exception {
     Object result = caller.call("testSlim", "nullString");
-    Assert.assertNull(result);
+    assertNull(result);
   }
 
   @Test
   public void handleEchoNull() throws Exception {
     Object result = caller.call("testSlim", "echoString", new Object[]{null});
-    Assert.assertNull(result);
+    assertNull(result);
   }
 
   @Test
   public void handleNullSymbols() throws Exception {
     caller.setVariable("x", null);
     Object result = caller.call("testSlim", "echoString", new Object[]{"$x"});
-    Assert.assertNull(result);
+    assertNull(result);
   }
 
   @Test
