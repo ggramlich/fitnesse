@@ -242,13 +242,13 @@ div.mainbar {
   position: absolute;
   top: 0px;
   left: 145px;
-  width: 85%;
+  right: 80px;
 }
 
 div.header {
-  margin: 0px;
+  margin: 10px 0px;
   padding: 5px;
-  height: 90px;
+  height: 100px;
   border-bottom: 1px solid #984D00;
 }
 
@@ -303,9 +303,8 @@ div.virtual-wiki-properties {
 #execution-status,
   #stop-test {
   position: absolute;
-  top: 0px;
+  top: 24px;
   right: 0px;
-  width: 100px;
   height: 90px;
   margin: 5px;
   text-align: center;
@@ -696,4 +695,18 @@ table.dirListing {
 
 .fit_grey {
   color: #808080;
+}
+
+#collapsable_control_container {
+  position: fixed;
+  right: 85px;
+  z-index: 100;
+  background-color: #F9F9F9;
+  border: 1px dotted #909090;
+  margin: 5px 0;
+  padding: 2px 3px;
+}
+
+#collapsable_control_container a:link {
+  font-weight: normal;
 }
